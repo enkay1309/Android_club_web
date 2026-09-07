@@ -41,7 +41,7 @@ export default function Events(){
     return(
         <main className= "min-h-screen bg-black text-white px-8 py-16">
             <h1 className= "text-5xl font-bold text-[#00f600] text-center">
-                EVENTS
+                UPCOMING EVENTS
             </h1>
             <div className= "mt-12 grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
                 {events.map((event)=>(
