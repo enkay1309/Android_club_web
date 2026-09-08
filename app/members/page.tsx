@@ -41,14 +41,14 @@ export default function Members(){
             </h1>
 
             <p className= "text-center text-gray-400 mt-4">
-                Meet the people behind the scene
+                Meet the people behind the scenes
             </p>
             <div className="mt-16 overflow-hidden">
             <div className= "flex w-max animate-scroll gap-8">
                 {[...members, ...members].map((member, index)=>(
                     <div 
                         key={`${member.name}-${index}`}
-                        className= "w-[280px] flex-shrink-0 overflow-hidden rounded-2xl border border-gray-800 bg-[#0a0a0a] transition-all hover:scale-105 hover:border-[#00f600] hover:shadow-[0_0_30px_#00f600]"
+                        className= "w-[280px] flex-shrink-0 overflow-hidden rounded-4xl border border-gray-800 bg-[#0a0a0a] transition-all hover:scale-105 hover:border-[#00f600] hover:shadow-[0_0_30px_#00f600]"
                         >
                         <img src={member.image} alt={member.name} className="w-full h-[320px] object-cover"
                         />

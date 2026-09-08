@@ -20,9 +20,9 @@ export default function Home() {
     <div className= "flex gap-8">
       <a className="hover:text-[#00f600]" href= "/">Home</a>
       <a className="hover:text-[#00f600]" href="/events"> Events</a>
-      <a className="hover:text-[#00f600]" href= "/team"> Members</a>
+      <a className="hover:text-[#00f600]" href= "/members"> Members</a>
       <a className="hover:text-[#00f600]" href="/archive"> Archive</a>
-      <a className="hover:text-[#00f600]" href= "/contact"> Contact us</a>
+      <a className="hover:text-[#00f600]" href= "/contact"> Contact</a>
     </div>
 
     </nav>

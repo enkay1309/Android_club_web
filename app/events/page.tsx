@@ -6,6 +6,7 @@ type Event = {
   venue: string;
   description: string;
   image: string;
+  registration: string;
 };
 const events=[
     {
