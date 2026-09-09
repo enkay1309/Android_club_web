@@ -11,22 +11,7 @@ export default function Home() {
   return (
     <main>
 
-    <nav className= "flex items-center justify-between px-8 py-4 bg-black text-white border-b border-gray-800 ">
-
     
-    <h1 className="font-[var(--font-space-grotesk)] text-5xl font-bold text-center text-[#00f600]">
-    ANDROID CLUB
-    </h1>
-
-    <div className= "flex gap-8">
-      <a className="hover:text-[#00f600]" href= "/">Home</a>
-      <a className="hover:text-[#00f600]" href="/events"> Events</a>
-      <a className="hover:text-[#00f600]" href= "/members"> Members</a>
-      <a className="hover:text-[#00f600]" href="/archive"> Archive</a>
-      <a className="hover:text-[#00f600]" href= "/contact"> Contact</a>
-    </div>
-
-    </nav>
     
     
 
