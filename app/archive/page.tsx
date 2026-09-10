@@ -1,4 +1,14 @@
 "use client";
+
+import {useEffect, useState} from "react";
+type Repository= {
+    id:number;
+    name: string;
+    description: string;
+    html_url: string;
+    language: string;
+    
+};
 const exhibits= [
             {
             year: 2026,
@@ -34,6 +44,13 @@ const exhibits= [
         ];
 
 export default function Archive() {
+    const[repositories, setRepositories]= useState<Repository[]>([]);
+    useEffect(()=> {
+        fetch( "https://api.github.com/orgs/Android-club-VITC/repos")
+        .then((response)=> response.json())
+        .then((data)=> setRepositories(data));
+    }, []);
+    
     return (
         
         <main className="min-h-screen bg-black text-white px-8 py-16">
@@ -86,6 +103,47 @@ export default function Archive() {
                 ))}
         </div>
         </div>
+
+    <section className="mt-20 px-8">
+  <h2 className="text-4xl font-bold text-[#00f600] text-center">
+    GITHUB PROJECTS
+  </h2>
+    <p className="text-center text-gray-400 mt-4">
+        To demonstrate public API</p>
+
+  <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {repositories.map((repo) => (
+      <div
+        key={repo.id}
+        className="rounded-2xl border border-gray-800 bg-[#0a0a0a] p-6 transition-all hover:scale-105 hover:border-[#00f600]"
+      >
+        <h3 className="text-2xl font-bold">
+          {repo.name}
+        </h3>
+
+        <p className="mt-3 text-gray-400">
+          {repo.description || "No description available."}
+        </p>
+
+        <p className="mt-4 text-[#00f600]">
+          {repo.language || "Various"}
+        </p>
+
+        
+
+        <a
+          href={repo.html_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-5 text-[#00f600]  hover:border hover:border-[#00f600]">
+          View on GitHub
+        </a>
+      </div>
+    ))}
+  </div>
+</section>
+
         </main>
     );
+
 }
