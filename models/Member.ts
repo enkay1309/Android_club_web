@@ -18,3 +18,4 @@ const memberSchema = new Schema({
 const Member = models.Member || mongoose.model("Member", memberSchema);
 
 export default Member;
+
