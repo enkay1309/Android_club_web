@@ -1,39 +1,19 @@
 "use client";
+//using mongodb database
+import {useEffect, useState} from "react";
 
-const members= [
-    {
-    name: "Akshay Kumar",
-    position: "President",
-    image: "/members/member1.jpg",
-},
-
-{ name: "Kiara Advani",
-    position: "Vice-President",
-    image: "/members/member2.jpg",
-},
-
-{
-    name: "Shahrukh Khan",
-    position: "Technical Lead",
-    image: "/members/member3.jpg",
-},
-
-
-{
-    name: "Rajkumar Rao",
-    position: "Events Lead",
-    image: "/members/member4.jpg",
-},
-
-{
-    name: "Kareena Kapoor",
-    position: "Design Lead",
-    image: "/members/member5.jpg",
-},
-
-];
 
 export default function Members(){
+    //here
+    const [members, setMembers]= useState<any []> ([]);
+    useEffect(()=> {
+        fetch("/api/members")
+        .then((response)=> response.json())
+        .then((data) => setMembers(data));
+
+    }, []);
+    //to here changes
+
     return(
         <main className= "min-h-screen bg-black text-white px-8 py-16 overflow-hidden">
             <h1 className= "text-5xl font-bold text-[#00f600] text-center">
