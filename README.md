@@ -15,11 +15,12 @@ The website provides a centralized platform where students can explore the club,
 
 ### Home Page
 
-![Home Page]()
+![Home Page](./public/screenshots/home_pg.png)
+![Home Page](./public/screenshots/explore-home.png)
 
 ### Events Page
 
-![Events Page](./screenshots/events.png)
+![Home Page](./public/screenshots/.png)
 
 ### Members Page
 
