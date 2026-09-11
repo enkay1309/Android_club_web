@@ -1,36 +1,468 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Android Club Website
 
-## Getting Started
+A modern, interactive sample website built for the Android Club to showcase its activities, events, members, archived work and contact the team for collaborate on projects or pitch ideas.
 
-First, run the development server:
+The website provides a centralized platform where students can explore the club, view upcoming events, learn about the team, and access previous activities and projects.
+
+## 🚀 Live Demo
+
+**Live Website:**
+[https://android-club-website-eight.vercel.app/]
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+
+![Home Page]()
+
+### Events Page
+
+![Events Page](./screenshots/events.png)
+
+### Members Page
+
+![Members Page](./screenshots/members.png)
+
+### Archive Page
+
+![Archive Page](./screenshots/archive.png)
+
+### Contact Page
+
+![Contact Page](./screenshots/contact.png)
+
+> Screenshots are stored in the `screenshots` folder of this repository.
+
+---
+
+## 🎥 Demo Video
+
+A complete demonstration of the website is available below:
+
+**Demo Video:**
+[Add your demo video link here]
+
+The video demonstrates:
+
+* Home page and navigation
+* Events section
+* Event details
+* Members carousel
+* Archive section
+* Contact page
+* Backend/API functionality
+* MongoDB data integration
+* Responsive and interactive UI
+
+---
+
+## ✨ Features
+
+* Modern Android Club themed interface
+* Responsive design
+* Persistent navigation across pages
+* Interactive event cards
+* Event details and registration links
+* Animated members carousel
+* Members data retrieved from MongoDB
+* Backend API integration using Next.js API routes
+* MongoDB database integration
+* Mongoose for database interaction
+* Archive/timeline section
+* Contact page
+* Interactive animations and hover effects
+* Deployed using Vercel
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* **Next.js**
+* **React**
+* **TypeScript**
+* **Tailwind CSS**
+* **HTML5**
+* **CSS3**
+
+### Backend
+
+* **Next.js API Routes**
+* **Node.js**
+* **MongoDB**
+* **Mongoose**
+
+### Deployment
+
+* **Vercel**
+* **MongoDB Atlas**
+
+### Development Tools
+
+* **Git**
+* **GitHub**
+* **VS Code**
+
+---
+
+## 🏗️ Project Structure
+
+```text
+android-club/
+│
+├── app/
+│   ├── api/
+│   │   └── members/
+│   │       └── route.ts
+│   │
+│   ├── archive/
+│   │   └── page.tsx
+│   │
+│   ├── contact/
+│   │   └── page.tsx
+│   │
+│   ├── events/
+│   │   └── page.tsx
+│   │
+│   ├── members/
+│   │   └── page.tsx
+│   │
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   └── ColorBends.tsx
+│
+├── lib/
+│   └── mongodb.ts
+│
+├── public/
+│   ├── events/
+│   ├── members/
+│   └── ...
+│
+├── package.json
+├── tsconfig.json
+├── next.config.ts
+└── README.md
+```
+
+---
+
+## ⚙️ Implementation
+
+### 1. Next.js Application
+
+The website is built using Next.js with the App Router.
+
+Different sections of the website are implemented as separate routes:
+
+```text
+/
+├── /events
+├── /members
+├── /archive
+└── /contact
+```
+
+This allows each section to have its own page while maintaining a consistent navigation layout.
+
+---
+
+### 2. React Components
+
+React components are used to create reusable and interactive elements throughout the website.
+
+For example, the website contains reusable components for visual effects and UI elements.
+
+Interactive functionality is implemented using React features such as state management and event handling.
+
+---
+
+### 3. TypeScript
+
+TypeScript is used throughout the project to provide type safety and improve code reliability.
+
+It is used for:
+
+* Component development
+* API routes
+* Database-related code
+* Data structures
+* Application logic
+
+---
+
+### 4. Tailwind CSS
+
+Tailwind CSS is used for styling the website.
+
+It provides utility classes for:
+
+* Layout
+* Spacing
+* Typography
+* Responsive design
+* Hover effects
+* Animations
+* Colors
+* Positioning
+
+The website uses a dark theme with neon green elements inspired by Android's visual identity.
+
+---
+
+### 5. MongoDB Integration
+
+MongoDB is used as the database for storing dynamic club information.
+
+The project uses **MongoDB Atlas** as the cloud database.
+
+The database stores member information such as:
+
+```text
+name
+position
+image
+```
+
+This allows member information to be retrieved dynamically instead of hardcoding all the data directly into the page.
+
+---
+
+### 6. Mongoose
+
+Mongoose is used to interact with MongoDB from the application.
+
+A MongoDB connection is established through:
+
+```text
+lib/mongodb.ts
+```
+
+The connection is reused by the application to communicate with the database.
+
+---
+
+### 7. Backend API
+
+A backend API endpoint is implemented using a Next.js API route:
+
+```text
+/api/members
+```
+
+The API retrieves member information from MongoDB and returns it to the frontend.
+
+The general flow is:
+
+```text
+Frontend
+    ↓
+Next.js API
+    ↓
+Mongoose
+    ↓
+MongoDB Atlas
+    ↓
+Member Data
+    ↓
+Frontend
+```
+
+This separates the frontend presentation from the database layer.
+
+---
+
+## 🔐 Environment Variables
+
+The MongoDB connection string is stored using an environment variable rather than being directly written into the source code.
+
+Create a file named:
+
+```text
+.env.local
+```
+
+Add:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+```
+
+Replace the value with your MongoDB Atlas connection string.
+
+### Important
+
+Do not upload `.env.local` to GitHub.
+
+It should be included in `.gitignore`:
+
+```text
+.env.local
+```
+
+---
+
+## 💻 Getting Started
+
+### Prerequisites
+
+Make sure the following are installed:
+
+* Node.js
+* npm
+* Git
+
+You will also need a MongoDB Atlas account if you want to use the database functionality locally.
+
+---
+
+### 1. Clone the Repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+Navigate into the project:
+
+```bash
+cd android-club
+```
+
+---
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 3. Configure Environment Variables
+
+Create:
+
+```text
+.env.local
+```
+
+and add:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+```
+
+---
+
+### 4. Start the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open the address in a browser to view the website.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📖 Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+After starting the application, users can:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Home
 
-## Deploy on Vercel
+Explore the Android Club and navigate to different sections of the website.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Events
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+View upcoming and previous club events and interact with event cards to see additional information.
+
+### Members
+
+View the Android Club team through the interactive members carousel.
+
+Member information is retrieved through the backend API and MongoDB.
+
+### Archive
+
+Explore previous club activities and achievements through the timeline-style archive.
+
+### Contact
+
+Access the club's contact information and communication options.
+
+---
+
+## 🌐 Deployment
+
+The application is deployed using **Vercel**.
+
+The production deployment connects the Next.js application with MongoDB Atlas through environment variables configured in the deployment environment.
+
+---
+
+## 🔮 Future Improvements
+
+Possible future improvements include:
+
+* Admin dashboard for managing events
+* Admin authentication
+* Event registration stored in the database
+* Student login system
+* Dynamic event creation
+* Event registration tracking
+* More club projects in the archive
+* Improved mobile navigation
+* Additional animations and interactive elements
+
+---
+
+## 📚 Learning Outcomes
+
+Through this project, the following technologies and concepts were implemented:
+
+* React
+* Next.js
+* Next.js App Router
+* TypeScript
+* Tailwind CSS
+* Multi-page website architecture
+* API routes
+* Backend integration
+* MongoDB
+* MongoDB Atlas
+* Mongoose
+* Git and GitHub
+* Vercel deployment
+* Environment variables
+* Responsive web design
+* Component-based development
+
+---
+
+## 👨‍💻 Author
+
+**Nehal Kashyap**
+
+CSE (AI/ML)
+
+VIT Chennai
+
+---
+
+## ⭐ Acknowledgements
+
+This project was developed as part of the Android Club recruitment process.
+
+The website combines modern web technologies with an interactive design to create a platform for showcasing the Android Club community, events, members, and activities.
