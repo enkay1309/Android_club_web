@@ -36,7 +36,7 @@ The website provides a centralized platform where students can explore the club,
 ### Contact Page
 
 ![Contact Page](./public/screenshots/contactus1.png)
-![Contact Page](./public/screenshots/contactus2.png)
+![Contact Page](./public/screenshots/Contactus2.png)
 
 > Screenshots are stored in the `screenshots` folder of this repository.
 
