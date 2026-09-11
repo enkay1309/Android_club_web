@@ -1,7 +1,4 @@
 
-
-# Android Club Website
-
 A modern, interactive sample website built for the Android Club to showcase its activities, events, members, archived work and contact the team for collaborate on projects or pitch ideas.
 
 The website provides a centralized platform where students can explore the club, view upcoming events, learn about the team, and access previous activities and projects.
@@ -24,6 +21,7 @@ The website provides a centralized platform where students can explore the club,
 
 <img width="1440" height="932" alt="events" src="https://github.com/user-attachments/assets/08c82a76-675b-497d-8031-0dc0ea912263" />
 
+<img width="1440" height="932" alt="Screenshot 2026-09-11 at 12 32 43 PM" src="https://github.com/user-attachments/assets/46e2f276-55ce-4859-8d9d-c057c797ac2d" />
 
 ### Members Page
 
