@@ -20,19 +20,23 @@ The website provides a centralized platform where students can explore the club,
 
 ### Events Page
 
-![Home Page](./public/screenshots/.png)
+![Home Page](./public/screenshots/events.png)
 
 ### Members Page
 
-![Members Page](./screenshots/members.png)
+![Members Page](./public/screenshots/members1.png)
+
 
 ### Archive Page
 
-![Archive Page](./screenshots/archive.png)
+![Archive Page](./public/screenshots/archive1.png)
+![Archive Page](./public/screenshots/archive2.png)
+![Archive Page](./public/screenshots/public_api_github.png)
 
 ### Contact Page
 
-![Contact Page](./screenshots/contact.png)
+![Contact Page](./public/screenshots/contactus1.png)
+![Contact Page](./public/screenshots/contactus2.png)
 
 > Screenshots are stored in the `screenshots` folder of this repository.
 
