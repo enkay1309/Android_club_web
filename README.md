@@ -22,7 +22,7 @@ The website provides a centralized platform where students can explore the club,
 
 ### Events Page
 
-![Home Page]<img width="1440" height="932" alt="events" src="https://github.com/user-attachments/assets/08c82a76-675b-497d-8031-0dc0ea912263" />
+<img width="1440" height="932" alt="events" src="https://github.com/user-attachments/assets/08c82a76-675b-497d-8031-0dc0ea912263" />
 
 
 ### Members Page
@@ -54,9 +54,16 @@ A complete demonstration of the website is available below:
 
 https://github.com/user-attachments/assets/68797412-b801-4cac-acaf-1e544f5735fa
 
+**mongoDB demo video**
+
+https://github.com/user-attachments/assets/09d237ac-231e-4c01-94ba-ec9ed23dae1f
 
 
-The video demonstrates:
+
+
+
+
+The videos demonstrate:
 
 * Home page and navigation
 * Events section
@@ -466,6 +473,7 @@ Through this project, the following technologies and concepts were implemented:
 ## 👨‍💻 Author
 
 **Nehal Kashyap**
+25BAI1636
 
 CSE (AI/ML)
 
@@ -473,8 +481,3 @@ VIT Chennai
 
 ---
 
-## ⭐ Acknowledgements
-
-This project was developed as part of the Android Club recruitment process.
-
-The website combines modern web technologies with an interactive design to create a platform for showcasing the Android Club community, events, members, and activities.
