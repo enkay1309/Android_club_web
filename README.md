@@ -22,7 +22,8 @@ The website provides a centralized platform where students can explore the club,
 
 ### Events Page
 
-![Home Page](./public/screenshots/events.png)
+![Home Page]<img width="1440" height="932" alt="events" src="https://github.com/user-attachments/assets/08c82a76-675b-497d-8031-0dc0ea912263" />
+
 
 ### Members Page
 
@@ -48,8 +49,12 @@ The website provides a centralized platform where students can explore the club,
 
 A complete demonstration of the website is available below:
 
-**Demo Video:**
-[Add your demo video link here]
+**Demo video**
+
+
+https://github.com/user-attachments/assets/68797412-b801-4cac-acaf-1e544f5735fa
+
+
 
 The video demonstrates:
 
