@@ -33,7 +33,7 @@ export default function contact() {
                                 EMAIL
                             </p>
                             <p className="text-gray-300 mt-1">
-                                androidclub@vit.ac.in
+                                sample_androidclub@vit.ac.in
                             </p>
                         </div>
 
