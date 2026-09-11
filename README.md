@@ -3,14 +3,14 @@ A modern, interactive sample website built for the Android Club to showcase its 
 
 The website provides a centralized platform where students can explore the club, view upcoming events, learn about the team, and access previous activities and projects.
 
-## 🚀 Live Demo
+##  Live Demo
 
 **Live Website:**
 [https://android-club-website-eight.vercel.app/]
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Home Page
 
@@ -75,7 +75,7 @@ The videos demonstrate:
 
 ---
 
-## ✨ Features
+##  Features
 
 * Modern Android Club themed interface
 * Responsive design
@@ -125,7 +125,7 @@ The videos demonstrate:
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```text
 android-club/
@@ -170,7 +170,7 @@ android-club/
 
 ---
 
-## ⚙️ Implementation
+##  Implementation
 
 ### 1. Next.js Application
 
@@ -326,7 +326,7 @@ Access the club's contact information and communication options.
 
 ---
 
-## 🌐 Deployment
+##  Deployment
 
 The application is deployed using **Vercel**.
 
@@ -336,7 +336,7 @@ The production deployment connects the Next.js application with MongoDB Atlas th
 
 
 
-## 📚 Learning Outcomes
+##  Learning Outcomes
 
 Through this project, the following technologies and concepts were implemented:
 
@@ -359,7 +359,7 @@ Through this project, the following technologies and concepts were implemented:
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Nehal Kashyap**
 25BAI1636
