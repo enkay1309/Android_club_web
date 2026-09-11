@@ -297,103 +297,8 @@ This separates the frontend presentation from the database layer.
 
 ---
 
-## 🔐 Environment Variables
 
-The MongoDB connection string is stored using an environment variable rather than being directly written into the source code.
 
-Create a file named:
-
-```text
-.env.local
-```
-
-Add:
-
-```env
-MONGODB_URI=your_mongodb_connection_string
-```
-
-Replace the value with your MongoDB Atlas connection string.
-
-### Important
-
-Do not upload `.env.local` to GitHub.
-
-It should be included in `.gitignore`:
-
-```text
-.env.local
-```
-
----
-
-## 💻 Getting Started
-
-### Prerequisites
-
-Make sure the following are installed:
-
-* Node.js
-* npm
-* Git
-
-You will also need a MongoDB Atlas account if you want to use the database functionality locally.
-
----
-
-### 1. Clone the Repository
-
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-```
-
-Navigate into the project:
-
-```bash
-cd android-club
-```
-
----
-
-### 2. Install Dependencies
-
-```bash
-npm install
-```
-
----
-
-### 3. Configure Environment Variables
-
-Create:
-
-```text
-.env.local
-```
-
-and add:
-
-```env
-MONGODB_URI=your_mongodb_connection_string
-```
-
----
-
-### 4. Start the Development Server
-
-```bash
-npm run dev
-```
-
-The application will be available at:
-
-```text
-http://localhost:3000
-```
-
-Open the address in a browser to view the website.
-
----
 
 ## 📖 Usage
 
@@ -431,21 +336,7 @@ The production deployment connects the Next.js application with MongoDB Atlas th
 
 ---
 
-## 🔮 Future Improvements
 
-Possible future improvements include:
-
-* Admin dashboard for managing events
-* Admin authentication
-* Event registration stored in the database
-* Student login system
-* Dynamic event creation
-* Event registration tracking
-* More club projects in the archive
-* Improved mobile navigation
-* Additional animations and interactive elements
-
----
 
 ## 📚 Learning Outcomes
 
