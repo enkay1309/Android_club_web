@@ -1,17 +1,16 @@
-# Android Club Website
 
 A modern, interactive sample website built for the Android Club to showcase its activities, events, members, archived work and contact the team for collaborate on projects or pitch ideas.
 
 The website provides a centralized platform where students can explore the club, view upcoming events, learn about the team, and access previous activities and projects.
 
-## 🚀 Live Demo
+##  Live Demo
 
 **Live Website:**
 [https://android-club-website-eight.vercel.app/]
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Home Page
 
@@ -20,7 +19,9 @@ The website provides a centralized platform where students can explore the club,
 
 ### Events Page
 
-![Home Page](./public/screenshots/events.png)
+<img width="1440" height="932" alt="events" src="https://github.com/user-attachments/assets/08c82a76-675b-497d-8031-0dc0ea912263" />
+
+<img width="1440" height="932" alt="Screenshot 2026-09-11 at 12 32 43 PM" src="https://github.com/user-attachments/assets/46e2f276-55ce-4859-8d9d-c057c797ac2d" />
 
 ### Members Page
 
@@ -46,10 +47,21 @@ The website provides a centralized platform where students can explore the club,
 
 A complete demonstration of the website is available below:
 
-**Demo Video:**
-[Add your demo video link here]
+**Demo video**
 
-The video demonstrates:
+
+https://github.com/user-attachments/assets/68797412-b801-4cac-acaf-1e544f5735fa
+
+**mongoDB demo video**
+
+https://github.com/user-attachments/assets/09d237ac-231e-4c01-94ba-ec9ed23dae1f
+
+
+
+
+
+
+The videos demonstrate:
 
 * Home page and navigation
 * Events section
@@ -63,7 +75,7 @@ The video demonstrates:
 
 ---
 
-## ✨ Features
+##  Features
 
 * Modern Android Club themed interface
 * Responsive design
@@ -113,7 +125,7 @@ The video demonstrates:
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```text
 android-club/
@@ -158,7 +170,7 @@ android-club/
 
 ---
 
-## ⚙️ Implementation
+##  Implementation
 
 ### 1. Next.js Application
 
@@ -283,103 +295,8 @@ This separates the frontend presentation from the database layer.
 
 ---
 
-## 🔐 Environment Variables
 
-The MongoDB connection string is stored using an environment variable rather than being directly written into the source code.
 
-Create a file named:
-
-```text
-.env.local
-```
-
-Add:
-
-```env
-MONGODB_URI=your_mongodb_connection_string
-```
-
-Replace the value with your MongoDB Atlas connection string.
-
-### Important
-
-Do not upload `.env.local` to GitHub.
-
-It should be included in `.gitignore`:
-
-```text
-.env.local
-```
-
----
-
-## 💻 Getting Started
-
-### Prerequisites
-
-Make sure the following are installed:
-
-* Node.js
-* npm
-* Git
-
-You will also need a MongoDB Atlas account if you want to use the database functionality locally.
-
----
-
-### 1. Clone the Repository
-
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-```
-
-Navigate into the project:
-
-```bash
-cd android-club
-```
-
----
-
-### 2. Install Dependencies
-
-```bash
-npm install
-```
-
----
-
-### 3. Configure Environment Variables
-
-Create:
-
-```text
-.env.local
-```
-
-and add:
-
-```env
-MONGODB_URI=your_mongodb_connection_string
-```
-
----
-
-### 4. Start the Development Server
-
-```bash
-npm run dev
-```
-
-The application will be available at:
-
-```text
-http://localhost:3000
-```
-
-Open the address in a browser to view the website.
-
----
 
 ## 📖 Usage
 
@@ -409,7 +326,7 @@ Access the club's contact information and communication options.
 
 ---
 
-## 🌐 Deployment
+##  Deployment
 
 The application is deployed using **Vercel**.
 
@@ -417,23 +334,9 @@ The production deployment connects the Next.js application with MongoDB Atlas th
 
 ---
 
-## 🔮 Future Improvements
 
-Possible future improvements include:
 
-* Admin dashboard for managing events
-* Admin authentication
-* Event registration stored in the database
-* Student login system
-* Dynamic event creation
-* Event registration tracking
-* More club projects in the archive
-* Improved mobile navigation
-* Additional animations and interactive elements
-
----
-
-## 📚 Learning Outcomes
+##  Learning Outcomes
 
 Through this project, the following technologies and concepts were implemented:
 
@@ -456,9 +359,10 @@ Through this project, the following technologies and concepts were implemented:
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Nehal Kashyap**
+25BAI1636
 
 CSE (AI/ML)
 
@@ -466,8 +370,3 @@ VIT Chennai
 
 ---
 
-## ⭐ Acknowledgements
-
-This project was developed as part of the Android Club recruitment process.
-
-The website combines modern web technologies with an interactive design to create a platform for showcasing the Android Club community, events, members, and activities.
